@@ -1,0 +1,44 @@
+@import "normalize.css";
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.main {
+  display: flex;
+}
+.main .info {
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  height: 100vh;
+  background-color: #f1f1f1;
+  flex: 1;
+}
+.main .info h1 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+.main .info h2 {
+  margin: 0;
+}
+.main .info .social-icons {
+  display: flex;
+  align-items: center;
+}
+.main .info .social-icons a {
+  font-size: 1.5rem;
+  color: #252525;
+  margin-right: 12px;
+}
+.main .info .social-icons a:hover {
+  color: black;
+}
+.main .side {
+  background: #0f111a url(../assets/snapshot.png) top left;
+  background-size: 130%;
+  background-repeat: no-repeat;
+  width: 40%;
+  flex: none;
+}

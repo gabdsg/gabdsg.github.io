@@ -1,0 +1,49 @@
+@import "./normalize.css";
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    display: flex;
+
+    .info{
+        padding: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        height: 100vh;
+        background-color: #f1f1f1;
+        flex: 1;
+
+        h1{
+            font-size: 6rem;
+            font-weight: 300;
+        }
+
+        h2{
+            margin: 0;
+        }
+
+        .social-icons{
+            display: flex;
+            align-items: center;
+            a{
+                font-size: 1.5rem;
+                color: #252525;
+                margin-right: 12px;
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .side{
+        background: #0f111a url(../assets/snapshot.png) top left;
+        background-size: 130%;
+        background-repeat: no-repeat;
+        width: 40%;
+        flex: none;
+    }
+}
