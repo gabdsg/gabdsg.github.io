@@ -2,11 +2,10 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow: hidden;
 }
 .main {
-  display: flex;
-}
-.main .info {
   padding: 3.5rem;
   display: flex;
   flex-direction: column;
@@ -15,30 +14,43 @@ body {
   height: 100vh;
   background-color: #f1f1f1;
   flex: 1;
+  background-image: url(../assets/bg.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: multiply;
 }
-.main .info h1 {
+@media only screen and (max-width: 900px) {
+  .main {
+    background-size: 66%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .main {
+    padding: 1.5rem;
+  }
+}
+.main h1 {
   font-size: 6rem;
   font-weight: 300;
 }
-.main .info h2 {
+@media only screen and (max-width: 750px) {
+  .main h1 {
+    font-size: 4rem;
+  }
+}
+.main h2 {
   margin: 0;
 }
-.main .info .social-icons {
+.main .social-icons {
   display: flex;
   align-items: center;
 }
-.main .info .social-icons a {
+.main .social-icons a {
   font-size: 1.5rem;
   color: #252525;
   margin-right: 12px;
 }
-.main .info .social-icons a:hover {
+.main .social-icons a:hover {
   color: black;
-}
-.main .side {
-  background: #0f111a url(../assets/snapshot.png) top left;
-  background-size: 130%;
-  background-repeat: no-repeat;
-  width: 40%;
-  flex: none;
 }
