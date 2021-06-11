@@ -30,24 +30,31 @@ body {
     padding: 1.5rem;
   }
 }
-.main h1 {
+.main h2.brand {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.main h2.brand .avatar {
+  border-radius: 50%;
+  width: 2rem;
+  margin-right: 6px;
+}
+.main h1.name {
   font-size: 6rem;
   font-weight: 300;
 }
 @media only screen and (max-width: 750px) {
-  .main h1 {
+  .main h1.name {
     font-size: 4rem;
   }
-}
-.main h2 {
-  margin: 0;
 }
 .main .social-icons {
   display: flex;
   align-items: center;
 }
 .main .social-icons a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #252525;
   margin-right: 12px;
 }
