@@ -1,3 +1,0 @@
-include: 
-  - .well-known
-  - .well-known/pki-validation/pki-validation/EB12021EA829BAF85D457FE21368BC34.txt
