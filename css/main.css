@@ -4,6 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   overflow: hidden;
+  height: -webkit-fill-available;
 }
 .main {
   padding: 3.5rem;
