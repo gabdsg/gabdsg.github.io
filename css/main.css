@@ -2,17 +2,17 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  height: 100vh;
   overflow: hidden;
-  height: -webkit-fill-available;
+  height: 100vh;
 }
 .main {
+  position: relative;
   padding: 3.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  height: 100%;
+  height: 100vh;
   background-color: #f1f1f1;
   flex: 1;
   background-image: url(../assets/bg.png);
@@ -50,9 +50,28 @@ body {
     font-size: 4rem;
   }
 }
+.main .spacing {
+  height: 60px;
+}
+@media only screen and (max-width: 900px) {
+  .main .spacing {
+    height: 160px;
+  }
+}
 .main .social-icons {
   display: flex;
   align-items: center;
+  position: fixed;
+  left: 3.5rem;
+  right: 3.5rem;
+  bottom: 3.5rem;
+}
+@media only screen and (max-width: 900px) {
+  .main .social-icons {
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
 }
 .main .social-icons a {
   font-size: 2rem;
